@@ -1,7 +1,9 @@
 let playing = false
 
 function playSound(details) {
-  if (details.url == "about:blank" || details.url.startsWith("https://accounts.youtube.com/RotateCookiesPage?")) return
+  if (details.url == "about:blank"
+    || details.url.startsWith("https://accounts.youtube.com/RotateCookiesPage?")
+    || details.url.startsWith("https://www.google.com/recaptcha/")) return
 
   if (playing) return
   playing = true
