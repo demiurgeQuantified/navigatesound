@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Navigate Sound",
+    "description": "Plays a sound upon navigation",
+    "version": "1.0",
+    "permissions": [
+        "webNavigation",
+        "offscreen"
+    ],
+    "background": {
+        "service_worker": "navigatesound.js"
+    }
+}
